@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Navbar, NavbarBrand} from 'reactstrap';
+import {Navbar, NavbarBrand, NavbarText} from 'reactstrap';
 import {Link} from 'react-router-dom';
+import AuthenticationService from '../services/AuthenticationService';
 
 export default class AppNavbar extends Component {
     constructor(props) {
@@ -18,6 +19,9 @@ export default class AppNavbar extends Component {
     render() {
         return <Navbar color="dark" dark expand="md">
             <NavbarBrand tag={Link} to="/">Home</NavbarBrand>
+            <NavbarBrand tag={Link} to="/login" >Login</NavbarBrand>
+            
+            
         </Navbar>;
     }
 }

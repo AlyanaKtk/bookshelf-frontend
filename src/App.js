@@ -5,7 +5,8 @@ import BookList from './components/BookList';
 import BookEdit from './components/BookEdit';
 import Home from './components/Home'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import AppNavbar from './components/AppNavbar';
+import Login from './components/Login';
+
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route path='/' exact={true} component={Home}/>
+            <Route path='/login' exact={true} component={Login}/>
             <Route path='/books/' exact={true} component={BookList}/>
             <Route path='/books/:id' component={BookEdit}/>
           </Switch>

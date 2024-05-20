@@ -34,7 +34,7 @@ class BookList extends Component {
             return <tr key={bookDTO.book_id}>
                 <td style={{whiteSpace: 'nowrap'}}>{bookDTO.title}</td>
                 <td>{bookDTO.author}</td>
-                <td>{bookDTO.pages}/5</td>
+                <td>{bookDTO.pages}</td>
                 <td>{bookDTO.rating}/5</td>
                 <td>
                     <ButtonGroup>
